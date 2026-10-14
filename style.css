@@ -1,1 +1,374 @@
+/* ================================
+   EarnNineja Professional Website
+   ================================ */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #171717;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: #171717;
+}
+
+.logo span {
+    color: #f5a000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5a000;
+}
+
+.nav-button {
+    background: #171717;
+    color: white;
+    padding: 11px 19px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #f5a000;
+}
+
+
+/* ================================
+   HERO
+   ================================ */
+
+.hero {
+    padding: 90px 0 80px;
+    background:
+        radial-gradient(circle at top right, #ffe6a8, transparent 35%),
+        #fffaf5;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.badge {
+    display: inline-block;
+    background: #fff0c9;
+    color: #8a5700;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #f5a000;
+}
+
+.hero-text > p {
+    max-width: 600px;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #171717;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #f5a000;
+}
+
+.secondary-button {
+    border: 2px solid #171717;
+    color: #171717;
+}
+
+.secondary-button:hover {
+    background: #171717;
+    color: white;
+}
+
+
+/* ================================
+   TRUST STATS
+   ================================ */
+
+.trust {
+    display: flex;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.trust div {
+    display: flex;
+    flex-direction: column;
+}
+
+.trust strong {
+    font-size: 20px;
+}
+
+.trust small {
+    color: #777;
+}
+
+
+/* ================================
+   PHONE CARD
+   ================================ */
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    width: 285px;
+    min-height: 520px;
+    background: #171717;
+    border: 8px solid #111;
+    border-radius: 35px;
+    padding: 25px 18px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+    transform: rotate(2deg);
+}
+
+.phone-top {
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom: 45px;
+}
+
+.balance-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px 18px;
+    margin-top: 40px;
+}
+
+.balance-card small {
+    color: #888;
+}
+
+.balance-card h3 {
+    margin: 12px 0;
+    font-size: 21px;
+}
+
+.balance-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.balance-card button {
+    width: 100%;
+    border: none;
+    background: #f5a000;
+    color: #171717;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 800;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+footer h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #bbbbbb;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 800px) {
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-button {
+        padding: 9px 13px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .trust {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-card {
+        margin-top: 10px;
+    }
+
+    .phone {
+        transform: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-button {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text > p {
+        font-size: 16px;
+    }
+
+    .trust {
+        gap: 15px;
+    }
+
+    .trust strong {
+        font-size: 17px;
+    }
+
+    .trust small {
+        font-size: 11px;
+    }
+
+    .phone {
+        width: 260px;
+    }
+}
